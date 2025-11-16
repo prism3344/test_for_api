@@ -1,15 +1,16 @@
 name: test for new api
 
-run: [push]
+on: [push]
 
 jobs:
   build:
-    - uses: actions/checkout@v4
-
-    steps:
-      - name: install 
-        run: pip install requirements.txt
-      - name: run tests
-        run: pytest -vv
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4 
+        - name: install requirements
+          run: pip install requirements.txt
+        - name: run tests
+          run: pytest -vv
+          
 
     
