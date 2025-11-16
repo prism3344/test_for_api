@@ -8,5 +8,6 @@ pydantic
 pytest
 faker
 requests
+python-multipart
 httpx
 pydantic[email]
