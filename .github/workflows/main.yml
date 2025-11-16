@@ -1,0 +1,15 @@
+name: test for new api
+
+run: [push]
+
+jobs:
+  build:
+    - uses: actions/checkout@v4
+
+    steps:
+      - name: install 
+        run: pip install requirements.txt
+      - name: run tests
+        run: pytest -vv
+
+    
