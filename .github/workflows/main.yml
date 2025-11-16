@@ -8,7 +8,7 @@ jobs:
       steps:
         - uses: actions/checkout@v4 
         - name: install requirements
-          run: pip install requirements.txt
+          run: pip install -r requirements.txt
         - name: run tests
           run: pytest -vv
           
