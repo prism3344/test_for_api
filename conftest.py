@@ -5,7 +5,7 @@ from faker import Faker
 fake = Faker()
 @pytest.fixture
 def base():
-    return 'http://127.0.0.1:8000'
+    return 'https://api-for-tests-6.onrender.com'
 class UserFunc:
     def __init__(self, base):
         self.base = base
@@ -57,5 +57,6 @@ def task(base, header):
 
 
     
+
 
 
